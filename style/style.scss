@@ -1,0 +1,134 @@
+/** @format */
+@import "./var";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Raleway", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: auto;
+}
+
+._landing {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(to bottom, rgb(63, 63, 153), rgb(99, 99, 197));
+  ._content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ._img_banner {
+      position: absolute;
+      width: 350px;
+      height: 350px;
+      @media screen and (max-width: 950px) {
+        width: 300px;
+        height: 300px;
+      }
+      @media screen and (max-width: 500px) {
+        width: 250px;
+        height: 250px;
+      }
+      object-fit: contain;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      &._left {
+        left: 40%;
+        top: 30%;
+      }
+      &._right {
+        left: 60%;
+        top: 65%;
+      }
+    }
+    ._caption {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      z-index: 10;
+      span {
+        display: inline-block;
+        font-size: 8rem;
+        font-weight: 800;
+        opacity: 0.3;
+        @media screen and (max-width: 650px) {
+          font-size: 5rem;
+        }
+        @media screen and (max-width: 620px) {
+          font-size: 4rem;
+        }
+        &:first-child {
+          position: relative;
+          left: -1rem;
+        }
+        @media screen and (max-width: 620px) {
+          &:first-child {
+            left: 0;
+          }
+        }
+        &:last-child {
+          position: relative;
+          left: 1.8rem;
+        }
+        @media screen and (max-width: 620px) {
+          &:last-child {
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+  ._btn_list {
+    position: absolute;
+    width: 100%;
+    transform: translateY(-50%);
+    top: 90%;
+    text-align: center;
+    ._btn {
+      background: $Dark;
+      padding: 10px 50px;
+      color: $White;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 4px;
+      border: 2px solid $Dark;
+      &._btn_white {
+        background: $White;
+        border: 2px solid $White;
+        color: $Dark;
+        &:hover {
+          border: 2px solid $White;
+          color: $White;
+        }
+      }
+      &:first-child {
+        margin-right: 1rem;
+      }
+      @media (max-width: 442px) {
+        &:first-child {
+          margin-bottom: 1rem;
+        }
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        background: transparent;
+        color: $Dark;
+        border: 2px solid $Dark;
+      }
+    }
+  }
+}

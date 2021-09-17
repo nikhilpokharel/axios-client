@@ -1,0 +1,195 @@
+/** @format */
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Raleway", sans-serif !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  height: auto;
+}
+
+._landing {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3f3f99), to(#6363c5));
+  background: linear-gradient(to bottom, #3f3f99, #6363c5);
+}
+
+._landing ._content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+._landing ._content ._img_banner {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 950px) {
+  ._landing ._content ._img_banner {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  ._landing ._content ._img_banner {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+._landing ._content ._img_banner._left {
+  left: 40%;
+  top: 30%;
+}
+
+._landing ._content ._img_banner._right {
+  left: 60%;
+  top: 65%;
+}
+
+._landing ._content ._caption {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 10;
+}
+
+._landing ._content ._caption span {
+  display: inline-block;
+  font-size: 8rem;
+  font-weight: 800;
+  opacity: 0.3;
+}
+
+@media screen and (max-width: 650px) {
+  ._landing ._content ._caption span {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  ._landing ._content ._caption span {
+    font-size: 4rem;
+  }
+}
+
+._landing ._content ._caption span:first-child {
+  position: relative;
+  left: -1rem;
+}
+
+@media screen and (max-width: 620px) {
+  ._landing ._content ._caption span:first-child {
+    left: 0;
+  }
+}
+
+._landing ._content ._caption span:last-child {
+  position: relative;
+  left: 1.8rem;
+}
+
+@media screen and (max-width: 620px) {
+  ._landing ._content ._caption span:last-child {
+    left: 0;
+  }
+}
+
+._landing ._btn_list {
+  position: absolute;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 90%;
+  text-align: center;
+}
+
+._landing ._btn_list ._btn {
+  background: #333333;
+  padding: 10px 50px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  border: 2px solid #333333;
+}
+
+._landing ._btn_list ._btn._btn_white {
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  color: #333333;
+}
+
+._landing ._btn_list ._btn._btn_white:hover {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+._landing ._btn_list ._btn:first-child {
+  margin-right: 1rem;
+}
+
+@media (max-width: 442px) {
+  ._landing ._btn_list ._btn:first-child {
+    margin-bottom: 1rem;
+  }
+}
+
+._landing ._btn_list ._btn:last-child {
+  margin-right: 0;
+}
+
+._landing ._btn_list ._btn:hover {
+  background: transparent;
+  color: #333333;
+  border: 2px solid #333333;
+}
+/*# sourceMappingURL=style.css.map */
