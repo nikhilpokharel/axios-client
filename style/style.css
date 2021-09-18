@@ -165,23 +165,24 @@ body {
   font-size: 13px;
   font-weight: 800;
   letter-spacing: 4px;
-  border: 2px solid #333333;
+  border: 1px solid #333333;
 }
 
 ._landing ._btn_list ._btn:hover {
   background: transparent;
   color: #333333;
-  border: 2px solid #333333;
+  border: 1px solid #333333;
 }
 
 ._landing ._btn_list ._btn._btn_white {
   background: #ffffff;
-  border: 2px solid #ffffff;
+  border: 1px solid #ffffff;
   color: #333333;
 }
 
 ._landing ._btn_list ._btn._btn_white:hover {
-  border: 2px solid #ffffff;
+  background: transparent !important;
+  border: 1px solid #ffffff;
   color: #ffffff;
 }
 
@@ -263,23 +264,24 @@ body {
   font-size: 13px;
   font-weight: 800;
   letter-spacing: 4px;
-  border: 2px solid #333333;
+  border: 1px solid #333333;
 }
 
 ._bottom ._btn_list ._btn:hover {
   background: transparent;
   color: #333333;
-  border: 2px solid #333333;
+  border: 1px solid #333333;
 }
 
 ._bottom ._btn_list ._btn._btn_white {
   background: #ffffff;
-  border: 2px solid #ffffff;
+  border: 1px solid #ffffff;
   color: #333333;
 }
 
 ._bottom ._btn_list ._btn._btn_white:hover {
-  border: 2px solid #ffffff;
+  background: transparent !important;
+  border: 1px solid #ffffff;
   color: #ffffff;
 }
 

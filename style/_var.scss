@@ -15,19 +15,20 @@ $SkinLight: #c9a79d;
   font-size: 13px;
   font-weight: 800;
   letter-spacing: 4px;
-  border: 2px solid $Dark;
+  border: 1px solid $Dark;
   &:hover {
     background: transparent;
     color: $Dark;
-    border: 2px solid $Dark;
+    border: 1px solid $Dark;
   }
 }
 @mixin BTN_WHITE {
   background: $White;
-  border: 2px solid $White;
+  border: 1px solid $White;
   color: $Dark;
   &:hover {
-    border: 2px solid $White;
+    background: transparent !important;
+    border: 1px solid $White;
     color: $White;
   }
 }
