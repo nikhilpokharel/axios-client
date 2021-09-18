@@ -1,37 +1,49 @@
 /** @format */
 @import "./var";
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@font-face {
+  font-family: "Sofia";
+  src: url("../slt/fonts/Sofia\ Pro\ Light.otf");
+  src: url("../slt/fonts/Sofia\ Pro\ Regular.otf");
+  src: url("../slt/fonts/Sofia\ Pro\ Semi\ Bold.otf");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html,
 body {
-  font-family: "Raleway", sans-serif !important;
+  position: relative;
+  font-family: "Sofia", sans-serif !important;
+  font-weight: 100;
+}
+.app {
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
+  flex-grow: 1;
+}
+._page {
   min-height: 100vh;
   height: auto;
+  flex: 1;
 }
-
 ._landing {
   position: relative;
-  width: 100%;
   overflow: hidden;
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(to bottom, rgb(63, 63, 153), rgb(99, 99, 197));
+  background: linear-gradient(to bottom, $Blue, $LightBlue);
   ._content {
     display: flex;
     align-items: center;
     justify-content: center;
     ._img_banner {
       position: absolute;
-      width: 350px;
-      height: 350px;
+      width: 380px;
+      height: 380px;
       @media screen and (max-width: 950px) {
         width: 300px;
         height: 300px;
@@ -44,14 +56,6 @@ body {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      &._left {
-        left: 40%;
-        top: 30%;
-      }
-      &._right {
-        left: 60%;
-        top: 65%;
-      }
     }
     ._caption {
       width: 100%;
@@ -62,7 +66,7 @@ body {
         display: inline-block;
         font-size: 8rem;
         font-weight: 800;
-        opacity: 0.3;
+        color: $Text;
         @media screen and (max-width: 650px) {
           font-size: 5rem;
         }
@@ -71,7 +75,7 @@ body {
         }
         &:first-child {
           position: relative;
-          left: -1rem;
+          left: -10px;
         }
         @media screen and (max-width: 620px) {
           &:first-child {
@@ -97,21 +101,9 @@ body {
     top: 90%;
     text-align: center;
     ._btn {
-      background: $Dark;
-      padding: 10px 50px;
-      color: $White;
-      font-size: 13px;
-      font-weight: 800;
-      letter-spacing: 4px;
-      border: 2px solid $Dark;
+      @include BTN();
       &._btn_white {
-        background: $White;
-        border: 2px solid $White;
-        color: $Dark;
-        &:hover {
-          border: 2px solid $White;
-          color: $White;
-        }
+        @include BTN_WHITE();
       }
       &:first-child {
         margin-right: 1rem;
@@ -124,10 +116,57 @@ body {
       &:last-child {
         margin-right: 0;
       }
-      &:hover {
-        background: transparent;
-        color: $Dark;
-        border: 2px solid $Dark;
+    }
+  }
+}
+
+._bottom {
+  position: relative;
+  background: radial-gradient($SkinLight, $SkinDark);
+  display: flex;
+  flex-direction: column;
+  ._content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 70vh;
+    justify-content: space-around;
+    ._caption {
+      color: $White;
+      text-transform: uppercase;
+      font-size: 2rem;
+      font-weight: 100;
+      letter-spacing: 14px;
+    }
+    ._img_banner {
+      width: 500px;
+      object-fit: contain;
+      @media screen and (max-width: 720px) {
+        width: 300px;
+      }
+    }
+  }
+  ._btn_list {
+    position: absolute;
+    width: 100%;
+    transform: translateY(-50%);
+    top: 90%;
+    text-align: center;
+    ._btn {
+      @include BTN();
+      &._btn_white {
+        @include BTN_WHITE();
+      }
+      &:first-child {
+        margin-right: 1rem;
+      }
+      @media (max-width: 442px) {
+        &:first-child {
+          margin-bottom: 1rem;
+        }
+      }
+      &:last-child {
+        margin-right: 0;
       }
     }
   }

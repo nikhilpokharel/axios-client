@@ -2,3 +2,32 @@
 
 $White: #ffffff;
 $Dark: #333333;
+$Blue: #2f4459;
+$Text: #657584;
+$LightBlue: #526373;
+$SkinDark: #926b5d;
+$SkinLight: #c9a79d;
+
+@mixin BTN {
+  background: $Dark;
+  padding: 10px 50px;
+  color: $White;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  border: 2px solid $Dark;
+  &:hover {
+    background: transparent;
+    color: $Dark;
+    border: 2px solid $Dark;
+  }
+}
+@mixin BTN_WHITE {
+  background: $White;
+  border: 2px solid $White;
+  color: $Dark;
+  &:hover {
+    border: 2px solid $White;
+    color: $White;
+  }
+}
