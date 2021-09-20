@@ -14,90 +14,136 @@
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script
+      defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"
-      integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
+    <!-- side navigation bar -->
     <div class="_asidebar">
       <div class="d-flex flex-column">
         <div class="_attr">
-          <a class="_active" href="#">ATTRIBUTES</a>
+          <a class="scrollspy-link" data-target="attributes">ATTRIBUTES</a>
         </div>
         <div class="_attr">
-          <a href="#">VERSATILITY</a>
+          <a class="scrollspy-link" data-target="versatility">VERSATILITY</a>
         </div>
         <div class="_attr">
-          <a href="#">SUSTAINABILITY</a>
+          <a class="scrollspy-link" data-target="sustanability"
+            >SUSTAINABILITY</a
+          >
         </div>
         <div class="_attr">
-          <a href="#">EXPERIENCE</a>
+          <a class="scrollspy-link" data-target="experience">EXPERIENCE</a>
         </div>
         <div class="_attr">
-          <a href="#">SPECIFICATIONS</a>
+          <a class="scrollspy-link" data-target="specifications"
+            >SPECIFICATIONS</a
+          >
         </div>
         <div class="_attr">
-          <a href="#">COMPARE MODELS</a>
+          <a class="scrollspy-link" data-target="compose">COMPARE MODELS</a>
         </div>
       </div>
     </div>
 
-    <div class="_page _main_page_second">
-      <div class="_page_content">
-        <div class="_content">
-          <img class="_img_banner" src="/slt/img5.png" alt="earbud left" />
+    <!-- ********************section-one******************* -->
+
+    <div id="attributes" class="_page _main_page_second scrollspy-section">
+      <div class="_content">
+        <img
+          data-aos="zoom-in"
+          class="_img_banner"
+          src="/slt/img5.png"
+          alt="earbud left"
+        />
+      </div>
+      <div class="col-md-8 m-auto _description row">
+        <div class="col-lg-3 _desc" data-aos="fade-up" data-aos-delay="450">
+          <span>2-way</span>
+          <span class="_minature">Hybrid System</span>
         </div>
-        <div class="col-md-8 m-auto _description row">
-          <div class="col-lg-3 _desc">
-            <span>2-way</span>
-            <span class="_minature">Hybrid System</span>
-          </div>
-          <div class="col-lg-3 _desc">
-            <span>Reference</span>
-            <span class="_minature">Tuning</span>
-          </div>
-          <div class="col-lg-3 _desc">
-            <span>XX Dynamic Driver</span>
-            <span class="_minature">Mg Dynamic Drive</span>
-          </div>
-          <div class="col-lg-3 _desc">
-            <a href="#" class="_btn _btn_black btn btn-default rounded-pill"
-              >BUY NOW</a
-            >
-          </div>
+        <div class="col-lg-3 _desc" data-aos="fade-up" data-aos-delay="450">
+          <span>Reference</span>
+          <span class="_minature">Tuning</span>
+        </div>
+        <div class="col-lg-3 _desc" data-aos="fade-up" data-aos-delay="500">
+          <span>XX Dynamic Driver</span>
+          <span class="_minature">Mg Dynamic Drive</span>
+        </div>
+        <div class="col-lg-3 _desc" data-aos="fade-up" data-aos-delay="550">
+          <a href="#" class="_btn _btn_black btn btn-default rounded-pill"
+            >BUY NOW</a
+          >
         </div>
       </div>
     </div>
 
-    <div class="_page _versatility">
+    <!-- ********************section-two******************* -->
+
+    <div id="versatility" class="_page _versatility scrollspy-section">
       <div class="_contents">
         <div class="_img_banner">
-          <img class="_img_object" src="/slt/img3.png" alt="side-view" />
+          <img
+            data-aos="zoom-in"
+            class="_img_object"
+            src="/slt/img3.png"
+            alt="side-view"
+          />
         </div>
         <div class="_labels">
-          <div class="_labl">
-            <span>Alumunium</span>
-            <span class="_miniature">alloy shell</span>
+          <div class="_labl _pic_labl">
+            <div
+              data-aos="fade-in"
+              data-aos-duration="900"
+              data-aos-delay="500"
+              class="_labelling"
+            ></div>
+            <div data-aos="fade-up" data-aos-delay="500">
+              <span>Alumunium</span>
+              <span class="_miniature">alloy shell</span>
+            </div>
           </div>
-          <div class="_labl">
-            <span>Titanium</span>
-            <span class="_miniature">nozzle</span>
+          <div class="_labl _pic_labl">
+            <div
+              data-aos="fade-in"
+              data-aos-duration="900"
+              data-aos-delay="500"
+              class="_labelling"
+            ></div>
+            <div data-aos="fade-up" data-aos-delay="500">
+              <span>Titanium</span>
+              <span class="_miniature">nozzle</span>
+            </div>
           </div>
-          <div class="_labl">
-            <span>Matte</span>
-            <span class="_miniature">finish</span>
+          <div class="_labl _pic_labl">
+            <div
+              data-aos="fade-in"
+              data-aos-duration="900"
+              data-aos-delay="500"
+              class="_labelling"
+            ></div>
+            <div data-aos="fade-up" data-aos-delay="500">
+              <span>Matte</span>
+              <span class="_miniature">finish</span>
+            </div>
           </div>
-          <div class="_labl">
-            <span>Hand-cut</span>
-            <span class="_miniature">natural stone</span>
+          <div class="_labl _pic_labl">
+            <div
+              data-aos="fade-in"
+              data-aos-duration="900"
+              data-aos-delay="500"
+              class="_labelling"
+            ></div>
+            <div data-aos="fade-up" data-aos-delay="500">
+              <span>Hand-cut</span>
+              <span class="_miniature">natural stone</span>
+            </div>
           </div>
           <div class="_labl">
             <a href="#" class="_btn _btn_black btn btn-default rounded-pill"
@@ -108,26 +154,36 @@
       </div>
     </div>
 
-    <div class="_page _main_page_second _sustainability">
+    <!-- ********************section-three / section two css used ******************* -->
+
+    <div
+      id="sustanability"
+      class="_page _main_page_second _sustainability scrollspy-section"
+    >
       <div class="_page_content">
         <div class="_content">
-          <img class="_img_banner" src="/slt/img5.png" alt="earbud left" />
+          <img
+            class="_img_banner"
+            data-aos="zoom-in"
+            src="/slt/img5.png"
+            alt="earbud left"
+          />
         </div>
 
         <div class="col-md-8 m-auto _description row">
-          <div class="col-lg-3 _desc">
+          <div data-aos="fade-up" data-aos-delay="400" class="col-lg-3 _desc">
             <span>12mm magnesium - alloy</span>
             <span class="_minature">dynamic driver</span>
           </div>
-          <div class="col-lg-3 _desc">
+          <div data-aos="fade-up" data-aos-delay="450" class="col-lg-3 _desc">
             <span>Twin Knowles balanced</span>
             <span class="_minature">armature drivers</span>
           </div>
-          <div class="col-lg-3 _desc">
+          <div data-aos="fade-up" data-aos-delay="500" class="col-lg-3 _desc">
             <span>Reference quality</span>
             <span class="_minature">sound</span>
           </div>
-          <div class="col-lg-3 _desc">
+          <div data-aos="fade-up" data-aos-delay="550" class="col-lg-3 _desc">
             <a href="#" class="_btn _btn_black btn btn-default rounded-pill"
               >BUY NOW</a
             >
@@ -138,30 +194,28 @@
 
     <!-- YOUTUBE_SECTION -->
 
-    <div class="_page _yt_section">
+    <div id="experience" class="_page _yt_section scrollspy-section">
       <div class="_cover">
+        <div class="_playIcon">
+          <img src="/slt/playicon.png" class="_icon" />
+        </div>
         <img
           src="/slt/pawel-czerwinski.jpg"
           alt="pawel-czerwinski"
           class="_img"
         />
         <div class="_desc">
-          <h2>Title Here</h2>
+          <h2 data-aos="fade-up">Title Here</h2>
         </div>
         <div class="_buy">
-          <a href="#" class="_btn _btn_black btn btn-default rounded-pill"
+          <a
+            href="#"
+            data-aos="fade-up"
+            data-aos-delay="500"
+            class="_btn _btn_black btn btn-default rounded-pill"
             >BUY NOW</a
           >
         </div>
-        <!-- <iframe
-          width="100%"
-          height="100"
-          src="https://www.youtube.com/embed/bc7apyrRuac"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe> -->
       </div>
     </div>
 
@@ -174,17 +228,17 @@
         />
       </div>
       <div class="_content row m-auto">
-        <div class="col-lg-3 col-md-4">
+        <div data-aos="fade-up" data-aos-delay="450" class="col-lg-3 col-md-4">
           <h2>cable-free design</h2>
         </div>
-        <div class="col-lg-5 col-md-4">
+        <div data-aos="fade-up" data-aos-delay="500" class="col-lg-5 col-md-4">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
             dignissim in felis ut elementum. Aliquam feugiat ut tellus eget
             rhoncus.
           </p>
         </div>
-        <div class="col-lg-3 col-md-4">
+        <div data-aos="fade-up" data-aos-delay="550" class="col-lg-3 col-md-4">
           <a href="#" class="_btn _btn_black btn btn-default rounded-pill"
             >BUY NOW</a
           >
@@ -194,10 +248,12 @@
 
     <!-- END_YOUTUBE_SECTION -->
 
-    <div class="_page _specifications">
+    <!-- ********************section-six******************* -->
+
+    <div id="specifications" class="_page _specifications scrollspy-section">
       <div class="row container m-auto">
         <div class="_col col-md-6 col-sm-12 _content">
-          <div class="_content_main">
+          <div data-aos="fade-up" data-aos-delay="500" class="_content_main">
             <h2>The harsh reality of stock cables</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
@@ -210,6 +266,7 @@
         </div>
         <div class="_col col-md-6 col-sm-12 _img_banner">
           <img
+            data-aos="zoom-in"
             class="img-fluid"
             src="/slt/matthew-feeney2.jpg"
             alt="matthew-feeney2"
@@ -217,13 +274,14 @@
         </div>
         <div class="_col col-md-6 col-sm-12 _img_banner">
           <img
+            data-aos="zoom-in"
             class="img-fluid"
             src="/slt/matthew-feeney.jpg"
             alt="matthew-feeney"
           />
         </div>
         <div class="_col col-md-6 col-sm-12 _content">
-          <div class="_content_main">
+          <div data-aos="fade-up" data-aos-delay="500" class="_content_main">
             <h2>Kinder to the earth</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
@@ -237,10 +295,16 @@
       </div>
     </div>
 
-    <div class="_page _specs_2 m-auto">
+    <!-- ********************section-seven******************* -->
+
+    <div class="_page _specs_2 m-auto scrollspy-section">
       <div class="row">
         <div class="col-lg-5 col-md-12 col-sm-12 _col">
-          <div class="_content container">
+          <div
+            data-aos="fade-in"
+            data-aos-delay="500"
+            class="_content container"
+          >
             <h2>Comfort</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
@@ -255,14 +319,16 @@
           </div>
         </div>
         <div class="col-lg-7 col-md-12 col-sm-12 _col m-auto">
-          <div class="_img_banner">
+          <div data-aos="zoom-in" class="_img_banner">
             <img src="slt/oscar-ochoa.jpg" alt="oscar ochoa" />
           </div>
         </div>
       </div>
     </div>
 
-    <div class="_page _img_section">
+    <!-- ********************section-eight******************* -->
+
+    <div class="_page _img_section scrollspy-section">
       <div class="_img_banner">
         <img
           src="/slt/richard-horvath.jpg"
@@ -271,17 +337,17 @@
         />
       </div>
       <div class="_content row m-auto">
-        <div class="col-lg-3 col-md-4">
+        <div data-aos="fade-up" data-aos-delay="450" class="col-lg-3 col-md-4">
           <h2>Expressions</h2>
         </div>
-        <div class="col-lg-5 col-md-4">
+        <div data-aos="fade-up" data-aos-delay="500" class="col-lg-5 col-md-4">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
             dignissim in felis ut elementum. Aliquam feugiat ut tellus eget
             rhoncus.
           </p>
         </div>
-        <div class="col-lg-3 col-md-4">
+        <div data-aos="fade-up" data-aos-delay="550" class="col-lg-3 col-md-4">
           <a href="#" class="_btn _btn_black btn btn-default rounded-pill"
             >BUY NOW</a
           >
@@ -289,10 +355,16 @@
       </div>
     </div>
 
-    <div class="_page _specs_2 m-auto">
+    <!-- ********************section-nine******************* -->
+
+    <div class="_page _specs_2 m-auto scrollspy-section">
       <div class="row">
         <div class="col-lg-5 col-md-12 col-sm-12 _col">
-          <div class="_content container">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="500"
+            class="_content container"
+          >
             <h2>Sensory</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
@@ -307,65 +379,72 @@
           </div>
         </div>
         <div class="col-lg-7 col-md-12 col-sm-12 _col m-auto">
-          <div class="_img_banner">
+          <div data-aos="zoom-in" class="_img_banner">
             <img src="slt/luke-peterson.jpg" alt="luke-peterson" />
           </div>
         </div>
       </div>
     </div>
 
+    <!-- ********************section-ten******************* -->
+
     <div class="_page _specifications_two">
       <div class="container row m-auto _main">
         <div class="_img_banner col-lg-8 col-md-12 col-sm-12">
-          <img src="/slt/img1.png" class="_img" alt="img one" />
+          <img
+            data-aos="zoom-in"
+            src="/slt/img1.png"
+            class="_img"
+            alt="img one"
+          />
         </div>
         <div class="_description col-lg-4 col-md-12 col-sm-12">
-          <h2>
+          <h2 data-aos="fade-in" data-aos-delay="400">
             <span>Technical</span>
             <span>Specifications</span>
           </h2>
           <ul class="_list">
             <div class="_primary">
-              <li>
+              <li data-aos="fade-up" data-aos-delay="450">
                 <span>Driver System</span>
               </li>
-              <li>
+              <li data-aos="fade-up" data-aos-delay="500">
                 <span>Frequency response</span>
                 <span>(-6DB)</span>
               </li>
-              <li>
+              <li data-aos="fade-up" data-aos-delay="550">
                 <span>Crossover</span>
                 <span>frequency</span>
               </li>
-              <li>
+              <li data-aos="fade-up" data-aos-delay="600">
                 <span>Crossover</span>
                 <span>architecture</span>
               </li>
-              <li>
+              <li data-aos="fade-up" data-aos-delay="650">
                 <span>Impedance</span>
               </li>
             </div>
             <div class="_secondary">
-              <li>
+              <li data-aos="fade-up" data-aos-delay="700">
                 <span>Sensitivity</span>
               </li>
-              <li>
+              <li data-aos="fade-up" data-aos-delay="750">
                 <span>Max input power</span>
               </li>
-              <li>
+              <li data-aos="fade-up" data-aos-delay="800">
                 <span>Max output SPL</span>
               </li>
-              <li>
+              <li data-aos="fade-up" data-aos-delay="850">
                 <span>System isolation</span>
                 <span>(dB)</span>
               </li>
-              <li>
+              <li data-aos="fade-up" data-aos-delay="900">
                 <span>Weighgt</span>
                 <span>(without cable)</span>
               </li>
             </div>
           </ul>
-          <div class="_btn_buy">
+          <div data-aos="fade-in" class="_btn_buy">
             <a href="#" class="_btn _btn_black btn btn-default rounded-pill"
               >BUY NOW</a
             >
@@ -374,34 +453,46 @@
       </div>
     </div>
 
-    <div class="_page _compare">
+    <!-- ********************section-eleven******************* -->
+
+    <div id="compose" class="_page _compare scrollspy-section">
       <h2 class="_heading">Compare Models</h2>
       <div class="col-md-8 m-auto row container">
-        <div class="col-md-6 _cont">
-          <h4>Axiom</h4>
+        <div class="col-lg-6 col-md-12 col-sm-12 _cont">
+          <h4 data-aos="fade-left" data-aos-delay="400">Axiom</h4>
           <div class="_img_banner">
-            <img src="/slt/img4.png" alt="image 5" class="_img" />
+            <img
+              data-aos="zoom-in"
+              src="/slt/img4.png"
+              alt="image 5"
+              class="_img"
+            />
           </div>
-          <div class="_price">
+          <div data-aos="fade-up" data-aos-delay="450" class="_price">
             <span>US $1,499</span>
             <span>Standard</span>
           </div>
-          <div class="_buy">
+          <div data-aos="fade-in" class="_buy" data-aos-delay="500">
             <a href="#" class="_btn _btn_black btn btn-default rounded-pill"
               >BUY NOW</a
             >
           </div>
         </div>
-        <div class="col-md-6 _cont">
-          <h4>Axiom XP</h4>
+        <div class="col-lg-6 col-md-12 col-sm-12 _cont">
+          <h4 data-aos="fade-right" data-aos-delay="400">Axiom XP</h4>
           <div class="_img_banner">
-            <img src="/slt/img5.png" alt="image 6" class="_img" />
+            <img
+              data-aos="zoom-in"
+              src="/slt/img5.png"
+              alt="image 6"
+              class="_img"
+            />
           </div>
-          <div class="_price">
+          <div data-aos="fade-up" data-aos-delay="450" class="_price">
             <span>US $2,388</span>
             <span>(guide price, tbc)</span>
           </div>
-          <div class="_buy">
+          <div data-aos="zoom-in" data-aos-delay="500" class="_buy">
             <a href="#" class="_btn _btn_black btn btn-default rounded-pill"
               >GET UPDATES</a
             >
@@ -409,13 +500,13 @@
         </div>
       </div>
       <div class="col-md-8 m-auto _listing_models container">
-        <div class="_item">
+        <div data-aos="fade-up" class="_item">
           <h4>2-way hybrid system</h4>
         </div>
-        <div class="_item">
+        <div data-aos="fade-up" class="_item">
           <h4>Reference tuning</h4>
         </div>
-        <div class="_item">
+        <div data-aos="fade-up" class="_item">
           <h4>Faceplate Design</h4>
           <div class="_desc">
             <div class="row">
@@ -430,7 +521,7 @@
             </div>
           </div>
         </div>
-        <div class="_item">
+        <div data-aos="fade-up" class="_item">
           <h4>Finish</h4>
           <div class="row">
             <div class="col-md-6 _desc">
@@ -443,7 +534,7 @@
             </div>
           </div>
         </div>
-        <div class="_item">
+        <div data-aos="fade-up" class="_item">
           <h4>Driver System</h4>
           <div class="row">
             <div class="col-md-6 _desc">
@@ -459,6 +550,5 @@
       </div>
     </div>
   </body>
-
   <script defer src="script/app.js"></script>
 </html>
