@@ -76,3 +76,23 @@ window.addEventListener("keydown", (e) => {
       return;
   }
 });
+
+//parallax effect
+const parallaxImagesY = document.querySelectorAll("._parallax_img");
+const parallaxImagesX = document.querySelectorAll("._parallax_img_x");
+if (parallaxImagesX) {
+  new simpleParallax(parallaxImagesY, {
+    delay: 0.6,
+    transition: "cubic-bezier(0,0,0,1)",
+    overflow: true,
+    scale: 1.2,
+  });
+}
+
+if (parallaxImagesY) {
+  new simpleParallax(parallaxImagesX, {
+    delay: 0.6,
+    orientation: "right",
+    scale: 1.2,
+  });
+}
