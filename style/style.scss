@@ -334,6 +334,18 @@ body {
             transform: translateY(-50%);
             background: $Dark;
             z-index: 10;
+            @media screen and (min-width: 2560px) {
+              width: 600px !important;
+              left: -550px !important;
+            }
+            @media screen and (min-width: 1920px) {
+              width: 600px !important;
+              left: -650px !important;
+            }
+            @media screen and (min-width: 1680px) {
+              width: 500px !important;
+              left: -540px !important;
+            }
             @media screen and (max-width: 770px) {
               left: 42% !important;
               transform: translateX(-50%) !important;
@@ -345,6 +357,10 @@ body {
           }
           &:nth-of-type(2) {
             ._labelling {
+              @media screen and (min-width: 2560px) {
+                width: 360px !important;
+                left: -350px !important;
+              }
               @media screen and (max-width: 770px) {
                 left: 45% !important;
                 transform: translateX(-50%) !important;
@@ -355,6 +371,14 @@ body {
               }
               left: -340px !important;
               width: 340px !important;
+              @media screen and (min-width: 1920px) {
+                width: 450px !important;
+                left: -480px !important;
+              }
+              @media screen and (min-width: 1680px) {
+                width: 500px !important;
+                left: -540px !important;
+              }
             }
           }
           &:nth-of-type(3) {
@@ -369,6 +393,18 @@ body {
               }
               left: -100px !important;
               width: 80px !important;
+              @media screen and (min-width: 2560px) {
+                width: 350px !important;
+                left: -350px !important;
+              }
+              @media screen and (min-width: 1920px) {
+                width: 250px !important;
+                left: -250px !important;
+              }
+              @media screen and (min-width: 1680px) {
+                width: 250px !important;
+                left: -250px !important;
+              }
             }
           }
           &:nth-of-type(4) {
@@ -383,6 +419,18 @@ body {
               }
               left: -150px !important;
               width: 130px !important;
+              @media screen and (min-width: 2560px) {
+                width: 400px !important;
+                left: -420px !important;
+              }
+              @media screen and (min-width: 1920px) {
+                width: 270px !important;
+                left: -300px !important;
+              }
+              @media screen and (min-width: 1680px) {
+                width: 270px !important;
+                left: -300px !important;
+              }
             }
           }
         }
@@ -406,6 +454,9 @@ body {
         }
         &:nth-of-type(1) {
           position: relative;
+          @media screen and (min-width: 2560px) {
+            left: -12rem;
+          }
           @media screen and (max-width: 770px) {
             left: -1.5rem !important;
           }
@@ -413,7 +464,10 @@ body {
         &:nth-of-type(2) {
           position: relative;
           left: -8rem;
-          @media screen and (max-width: 770px) {
+          @media screen and (min-width: 2560px) {
+            left: -25rem;
+          }
+          @media screen and (min-width: 770px) {
             left: -6rem !important;
           }
         }
@@ -423,12 +477,18 @@ body {
           @media screen and (max-width: 770px) {
             left: 6rem !important;
           }
+          @media screen and (min-width: 2560px) {
+            left: -10rem !important;
+          }
         }
         &:nth-of-type(4) {
           position: relative;
           left: -1rem;
           @media screen and (max-width: 770px) {
             left: 2.5rem !important;
+          }
+          @media screen and (min-width: 2560px) {
+            left: -4rem !important;
           }
         }
         span {
