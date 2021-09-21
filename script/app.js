@@ -4,6 +4,7 @@ AOS.init({
   disable: "mobile",
 });
 
+//custom navigation scrollspy
 const links = document.querySelectorAll(".scrollspy-link");
 const sections = document.querySelectorAll(".scrollspy-section");
 const sideBar = document.querySelector("._asidebar");
@@ -46,3 +47,32 @@ const scrollspy = () => {
   });
 };
 scrollspy();
+
+//page-popup
+const modalLauncher = document.querySelector("._launch_modal");
+if (modalLauncher) {
+  const btn = document.createElement("button");
+  btn.setAttribute("data-bs-toggle", "modal");
+  btn.setAttribute("data-bs-target", "#exampleModal");
+  modalLauncher.append(btn);
+
+  window.onload = () => {
+    btn.click();
+  };
+}
+
+//this code is for optional purpose only you can delete this code directly in production
+//for navigation shortcuts
+window.addEventListener("keydown", (e) => {
+  switch (e.key) {
+    case "PageUp":
+      window.location = "/axiom.html";
+      break;
+
+    case "PageDown":
+      window.location = "/";
+      break;
+    default:
+      return;
+  }
+});
