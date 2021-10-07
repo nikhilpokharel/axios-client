@@ -6,7 +6,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,6 +13,7 @@
       crossorigin="anonymous"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
@@ -21,14 +21,14 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <title>Axiom Client</title>
+    <title>Effect Audio</title>
   </head>
   <body class="app">
     <div class="_page _landing">
       <div data-aos="fade-in" class="_contents">
         <img
           class="_img_banner"
-          src="/slt/img2.png"
+          src="img/img2.png"
           alt="listening equipment"
         />
         <div data-aos="zoom-in" data-aos-delay="500" class="_caption">
@@ -43,7 +43,7 @@
         <a
           data-aos="fade-down"
           data-aos-delay="600"
-          href="#"
+          href="/axiom.html"
           class="_btn _btn_white btn btn-default rounded-pill"
           >LEARN MORE</a
         >
@@ -65,13 +65,13 @@
         <img
           data-aos="zoom-in"
           class="_img_banner"
-          src="/slt/img5.png"
+          src="img/img5.png"
           alt="earbud left"
         />
       </div>
       <div class="_btn_list">
         <a
-          href="#"
+          href="/axiom.html"
           data-aos="fade-down"
           data-aos-delay="600"
           class="_btn _btn_white btn btn-default rounded-pill"
@@ -86,106 +86,7 @@
         >
       </div>
     </div>
-
-    <!-- newsletter section -->
-    <!-- Full screen modal -->
-    <div class="_launch_modal"></div>
-    <div
-      class="modal fade _modal_newsletter"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-fullscreen _newsletter">
-        <div class="modal-content">
-          <button
-            type="button"
-            class="_close_btn"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
-            <span>&#10539;</span>
-          </button>
-          <div class="_page">
-            <div class="row _newsletter">
-              <div class="col-lg-4 col-md-6 col-sm-12 m-auto">
-                <div class="_form">
-                  <h4 class="_heading">
-                    <span>Newsletter</span>
-                    <span>Sign-up for</span>
-                    <span>Axiom me</span>
-                  </h4>
-                  <form class="_input_form" action="#">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control rounded-pill _input_field"
-                        placeholder="Name*"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <input
-                        type="email"
-                        class="form-control rounded-pill _input_field"
-                        placeholder="Email*"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <div class="_interest">
-                        <span>I am interested in*</span>
-                        <div class="list-group">
-                          <label class="list-group-item">
-                            <input
-                              class="form-check-input me-1"
-                              type="checkbox"
-                              value=""
-                            />
-                            Axiom
-                          </label>
-                          <label class="list-group-item">
-                            <input
-                              class="form-check-input me-1"
-                              type="checkbox"
-                              value=""
-                            />
-                            Axiom XP
-                          </label>
-                          <label class="list-group-item">
-                            <input
-                              class="form-check-input me-1"
-                              type="checkbox"
-                              value=""
-                            />
-                            MU System
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-group _btn_submit">
-                      <button
-                        href="#"
-                        class="_btn _btn_black btn btn-default rounded-pill"
-                      >
-                        BUY NOW
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="col-lg-8 col-md-6 col-sm-12 _img_banner">
-                <img
-                  class="_img img-fluid"
-                  src="/slt/Luxury 2.jpg"
-                  alt="luxury"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </body>
 
-  <script defer src="script/app.js"></script>
+  <script defer src="js/app.js"></script>
 </html>

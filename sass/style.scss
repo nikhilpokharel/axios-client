@@ -3,12 +3,12 @@
 
 @font-face {
   font-family: "Sofia";
-  src: url("../slt/fonts/SofiaProLight.woff");
-  src: url("../slt/fonts/SofiaProLight.woff2");
-  src: url("../slt/fonts/SofiaProRegular.woff");
-  src: url("../slt/fonts/SofiaProRegular.woff2");
-  src: url("../slt/fonts/SofiaProSemiBold.woff");
-  src: url("../slt/fonts/SofiaProSemiBold.woff2");
+  src: url("../fonts/SofiaProLight.woff");
+  src: url("../fonts/SofiaProLight.woff2");
+  src: url("../fonts/SofiaProRegular.woff");
+  src: url("../fonts/SofiaProRegular.woff2");
+  src: url("../fonts/SofiaProSemiBold.woff");
+  src: url("../fonts/SofiaProSemiBold.woff2");
 }
 
 ._content {
@@ -526,6 +526,13 @@ body {
 //third-section
 ._sustainability {
   background: $White;
+  ._content{
+    ._img_banner{
+      width:100%;
+      display: block;
+      margin:0 auto;
+    }
+  }
   ._description {
     ._btn_black {
       @include BTN();
@@ -988,12 +995,15 @@ body {
     top: 10px;
     right: 10px;
     border: 2px solid $White;
+    border-radius:50%;
+    width:30px;
+    height:30px;
+    line-height: 15px;
     @media screen and (max-width: 761px) {
       right: 20px !important;
       border: 2px solid $Dark !important;
     }
     background: transparent;
-    padding: 2px 6px !important;
     opacity: 0.6;
     &:hover {
       opacity: 0.8;

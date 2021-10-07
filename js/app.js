@@ -49,31 +49,35 @@ const scrollspy = () => {
 scrollspy();
 
 //page-popup
-const modalLauncher = document.querySelector("._launch_modal");
-if (modalLauncher) {
-  const btn = document.createElement("button");
-  btn.setAttribute("data-bs-toggle", "modal");
-  btn.setAttribute("data-bs-target", "#exampleModal");
-  modalLauncher.append(btn);
+// const modalLauncher = document.querySelector("._launch_modal");
+// if (modalLauncher) {
+//   const btn = document.createElement("button");
+//   btn.setAttribute("data-bs-toggle", "modal");
+//   btn.setAttribute("data-bs-target", "#exampleModal");
+//   modalLauncher.append(btn);
 
-  window.onload = () => {
-    btn.click();
-  };
-}
+//   window.onload = () => {
+//     btn.click();
+//   };
+// }
 
-//this code is for optional purpose only you can delete this code directly in production
-//for navigation shortcuts
-window.addEventListener("keydown", (e) => {
-  switch (e.key) {
-    case "PageUp":
-      window.location = "/axiom.html";
-      break;
-
-    case "PageDown":
-      window.location = "/";
-      break;
-    default:
-      return;
+var playButton = document.querySelector("._playIcon");
+var video = document.querySelector("#video_exp");
+var video_title = document.querySelector("#experience ._desc");
+// Event listener for the play/pause button
+playButton.addEventListener("click", function() {
+  if (video.paused == true) {
+    // Play the video
+    video.play();
+    video_title.style.display = "none";
+    // Update the button text to 'Pause'
+    //playButton.innerHTML = "Pause";
+  } else {
+    // Pause the video
+    video.pause();
+    video_title.style.display = "inherit";
+    // Update the button text to 'Play'
+    //playButton.innerHTML = "Play";
   }
 });
 
@@ -84,7 +88,6 @@ if (parallaxImagesX) {
   new simpleParallax(parallaxImagesY, {
     delay: 0.6,
     transition: "cubic-bezier(0,0,0,1)",
-    overflow: true,
     scale: 1.2,
   });
 }
