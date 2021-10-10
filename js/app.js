@@ -1,13 +1,23 @@
 /** @format */
 AOS.init({
   offset: 0,
-  disable: "mobile",
+  disable: true,
 });
 
 //custom navigation scrollspy
+let scrolling = false;
 const links = document.querySelectorAll(".scrollspy-link");
 const sections = document.querySelectorAll(".scrollspy-section");
 const sideBar = document.querySelector("._asidebar");
+
+window.addEventListener("scroll", () => {
+  links.forEach((item) => {
+    item.classList.add("_scrolling");
+    setTimeout(() => {
+      item.classList.remove("_scrolling");
+    }, 3000);
+  });
+});
 
 links.forEach((link) => {
   link.onclick = () => {
@@ -20,6 +30,7 @@ links.forEach((link) => {
 });
 window.onscroll = () => scrollspy();
 window.onresize = () => scrollspy();
+
 const scrollspy = () => {
   const pageYPosition =
     document.documentElement.scrollTop || document.body.scrollTop;
@@ -65,7 +76,7 @@ var playButton = document.querySelector("._playIcon");
 var video = document.querySelector("#video_exp");
 var video_title = document.querySelector("#experience ._desc");
 // Event listener for the play/pause button
-playButton.addEventListener("click", function() {
+playButton.addEventListener("click", function () {
   if (video.paused == true) {
     // Play the video
     video.play();
@@ -80,22 +91,28 @@ playButton.addEventListener("click", function() {
     //playButton.innerHTML = "Play";
   }
 });
-
+// _img_parallax_x;
 //parallax effect
 const parallaxImagesY = document.querySelectorAll("._parallax_img");
-const parallaxImagesX = document.querySelectorAll("._parallax_img_x");
-if (parallaxImagesX) {
-  new simpleParallax(parallaxImagesY, {
-    delay: 0.6,
-    transition: "cubic-bezier(0,0,0,1)",
-    scale: 1.2,
-  });
-}
+
+// window.addEventListener("resize", () => {
+//   if (window.innerWidth > 992) {
+//     parallaxImagesX.classList.remove("_parallax_img");
+//     parallaxImagesY.classList.remove("_parallax_img_x");
+//   }
+// });
+
+// if (parallaxImagesX) {
+//   new simpleParallax(parallaxImagesY, {
+//     delay: 0.6,
+//     transition: "cubic-bezier(0,0,0,1)",
+//     scale: 1.2,
+//   });
+// }
 
 if (parallaxImagesY) {
-  new simpleParallax(parallaxImagesX, {
+  new simpleParallax(parallaxImagesY, {
     delay: 0.6,
-    orientation: "right",
     scale: 1.2,
   });
 }

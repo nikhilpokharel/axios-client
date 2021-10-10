@@ -331,6 +331,12 @@ body {
         text-align: center;
         @media screen and (max-width: 770px) {
           padding-bottom: 1rem;
+          &:first-child {
+            margin-right: 8rem;
+          }
+          &:nth-of-type(2) {
+            margin-right: 2rem;
+          }
         }
         &._pic_labl {
           position: relative;
@@ -356,12 +362,12 @@ body {
               left: -540px !important;
             }
             @media screen and (max-width: 770px) {
-              left: 42% !important;
+              left: 84% !important;
               transform: translateX(-50%) !important;
               transform: translateY(0%) !important;
-              top: -240px !important;
+              top: -220px !important;
               width: 1px !important;
-              height: 240px !important;
+              height: 210px !important;
             }
           }
           &:nth-of-type(2) {
@@ -371,12 +377,12 @@ body {
                 left: -350px !important;
               }
               @media screen and (max-width: 770px) {
-                left: 45% !important;
+                left: 50% !important;
                 transform: translateX(-50%) !important;
                 transform: translateY(0%) !important;
-                top: -280px !important;
+                top: -270px !important;
                 width: 1px !important;
-                height: 280px !important;
+                height: 260px !important;
               }
               left: -340px !important;
               width: 340px !important;
@@ -526,11 +532,11 @@ body {
 //third-section
 ._sustainability {
   background: $White;
-  ._content{
-    ._img_banner{
-      width:100%;
+  ._content {
+    ._img_banner {
+      width: 100%;
       display: block;
-      margin:0 auto;
+      margin: 0 auto;
     }
   }
   ._description {
@@ -648,10 +654,7 @@ body {
     align-items: center;
     justify-content: center;
     ._content_main {
-      padding: 0 2rem;
-      @media screen and (max-width: 750px) {
-        padding: 1rem 1rem !important;
-      }
+      padding: 2rem 2rem;
       h2 {
         font-weight: bold !important;
         padding: 8px 0px;
@@ -674,10 +677,15 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: flex-start !important;
     justify-content: center;
     padding: 2rem 7rem;
+    margin: auto 0px;
     @media screen and (max-width: 1100px) {
-      padding: 2rem 3rem;
+      padding: 2rem 1rem;
+    }
+    @media screen and (max-width: 991px) {
+      align-items: center;
     }
     @media screen and (max-width: 750px) {
       padding: 2rem 1rem !important;
@@ -713,7 +721,7 @@ body {
   flex-direction: column;
   ._img_banner {
     width: 100%;
-    height: 70vh;
+    height: 50vh;
     overflow: hidden !important;
     ._img {
       width: 100%;
@@ -723,13 +731,10 @@ body {
   }
   ._content {
     min-height: 30vh;
-    height: auto;
-    margin-top: -2rem;
     padding: 2rem 0rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: auto;
     h2 {
       font-size: 1.5rem;
       letter-spacing: 2px;
@@ -898,17 +903,30 @@ body {
     }
   }
   ._listing_models {
+    position: relative;
     padding: 2rem 0rem;
     ._item {
       padding: 2rem 0rem;
       @media screen and (max-width: 580px) {
         padding: 2rem 2rem;
       }
-      border-top: 2px solid $Dark;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        left: 0;
+        height: 2px;
+        background: $Dark;
+        @media screen and (max-width: 660px) {
+          width: 85%;
+          left: 8%;
+        }
+      }
       h4 {
         @media screen and (max-width: 580px) {
           font-size: 1.2rem;
         }
+        padding: 1rem 0rem;
         font-size: 1.4rem;
         letter-spacing: 2px;
         text-transform: uppercase;
@@ -972,6 +990,9 @@ body {
       &._active {
         opacity: 1;
         color: $White;
+        &._scrolling {
+          opacity: 0 !important;
+        }
       }
       margin-bottom: 4px;
       text-decoration: none;
@@ -995,9 +1016,9 @@ body {
     top: 10px;
     right: 10px;
     border: 2px solid $White;
-    border-radius:50%;
-    width:30px;
-    height:30px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
     line-height: 15px;
     @media screen and (max-width: 761px) {
       right: 20px !important;
@@ -1070,5 +1091,12 @@ body {
         }
       }
     }
+  }
+}
+
+._change_direction_mob {
+  @media screen and (max-width: 991px) {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }

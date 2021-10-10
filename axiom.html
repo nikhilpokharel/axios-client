@@ -16,7 +16,7 @@
     />
     <!-- animate on scroll css -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="sass/style.css" />
     <!-- parallax effect bundle -->
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
     <!-- animate on scroll js -->
@@ -202,7 +202,7 @@
     <div id="experience" class="_page _yt_section scrollspy-section">
       <div class="_cover">
         <video id="video_exp" class="_banner" poster="img/pawel-czerwinski.jpg">
-          <source src="img/video.mp4" type="video/mp4">
+          <source src="img/video.mp4" type="video/mp4" />
         </video>
         <!-- <img class="_banner" src="img/pawel-czerwinski.jpg" /> -->
         <div class="_playIcon">
@@ -227,9 +227,12 @@
 
     <div class="_page _img_section">
       <div class="_img_banner">
-        <img class="_img _parallax_img" src="img/tpd-productions.jpg" />
+        <img
+          class="_img _parallax_img _img_parallax_y"
+          src="img/tpd-productions.jpg"
+        />
       </div>
-      <div class="_content row m-auto">
+      <div class="_content row _align_center_mob">
         <div data-aos="fade-up" data-aos-delay="450" class="col-lg-3 col-md-4">
           <h2>cable-free design</h2>
         </div>
@@ -250,45 +253,52 @@
     <!-- ********************section-six******************* -->
 
     <div id="specifications" class="_page _specifications scrollspy-section">
-      <div class="row container m-auto">
-        <div class="_col col-md-6 col-sm-12 _content">
-          <div data-aos="fade-up" data-aos-delay="500" class="_content_main">
-            <h2>The harsh reality of stock cables</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-              dignissim in felis ut elementum. Aliquam feugiat ut tellus eget
-              rhoncus. Vivamus non mauris id lorem imperdiet ecitur. Morbi vel
-              libero suscipit, suscipit massa et, finibus nibh. Mauris ut
-              porttitor libero. Duis tincidunt felis quis neque maximus posuere.
-            </p>
+      <div class="container m-auto">
+        <div class="row m-auto _change_direction_mob">
+          <div class="_col col-md-12 col-lg-6 col-sm-12 _content">
+            <div data-aos="fade-up" data-aos-delay="500" class="_content_main">
+              <h2>The harsh reality of stock cables</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur dignissim in felis ut elementum. Aliquam feugiat ut
+                tellus eget rhoncus. Vivamus non mauris id lorem imperdiet
+                ecitur. Morbi vel libero suscipit, suscipit massa et, finibus
+                nibh. Mauris ut porttitor libero. Duis tincidunt felis quis
+                neque maximus posuere.
+              </p>
+            </div>
+          </div>
+          <div class="_col col-md-12 col-lg-6 col-sm-12 _img_banner">
+            <img
+              data-aos="zoom-in"
+              class="img-fluid _parallax_img _img_parallax_y"
+              src="img/matthew-feeney2.jpg"
+              alt="matthew-feeney2"
+            />
           </div>
         </div>
-        <div class="_col col-md-6 col-sm-12 _img_banner">
-          <img
-            data-aos="zoom-in"
-            class="img-fluid _parallax_img"
-            src="img/matthew-feeney2.jpg"
-            alt="matthew-feeney2"
-          />
-        </div>
-        <div class="_col col-md-6 col-sm-12 _img_banner">
-          <img
-            data-aos="zoom-in"
-            class="img-fluid _parallax_img"
-            src="img/matthew-feeney.jpg"
-            alt="matthew-feeney"
-          />
-        </div>
-        <div class="_col col-md-6 col-sm-12 _content">
-          <div data-aos="fade-up" data-aos-delay="500" class="_content_main">
-            <h2>Kinder to the earth</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-              dignissim in felis ut elementum. Aliquam feugiat ut tellus eget
-              rhoncus. Vivamus non mauris id lorem imperdiet ecitur. Morbi vel
-              libero suscipit, suscipit massa et, finibus nibh. Mauris ut
-              porttitor libero. Duis tincidunt felis quis neque maximus posuere.
-            </p>
+
+        <div class="row m-auto">
+          <div class="_col col-md-12 col-lg-6 col-sm-12 _img_banner">
+            <img
+              data-aos="zoom-in"
+              class="img-fluid _parallax_img _img_parallax_y"
+              src="img/matthew-feeney.jpg"
+              alt="matthew-feeney"
+            />
+          </div>
+          <div class="_col col-md-12 col-lg-6 col-sm-12 _content">
+            <div data-aos="fade-up" data-aos-delay="500" class="_content_main">
+              <h2>Kinder to the earth</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur dignissim in felis ut elementum. Aliquam feugiat ut
+                tellus eget rhoncus. Vivamus non mauris id lorem imperdiet
+                ecitur. Morbi vel libero suscipit, suscipit massa et, finibus
+                nibh. Mauris ut porttitor libero. Duis tincidunt felis quis
+                neque maximus posuere.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -302,7 +312,7 @@
           <div
             data-aos="fade-in"
             data-aos-delay="500"
-            class="_content container"
+            class="_content container _align_center_mob"
           >
             <h2>Comfort</h2>
             <p>
@@ -319,7 +329,10 @@
         </div>
         <div class="col-lg-7 col-md-12 col-sm-12 _col m-auto">
           <div class="_img_banner">
-            <img src="img/oscar-ochoa.jpg" class="_parallax_img" />
+            <img
+              src="img/oscar-ochoa.jpg"
+              class="_parallax_img _img_parallax_y"
+            />
           </div>
         </div>
       </div>
@@ -329,9 +342,12 @@
 
     <div class="_page _img_section scrollspy-section">
       <div class="_img_banner">
-        <img src="img/richard-horvath.jpg" class="_img _parallax_img" />
+        <img
+          src="img/richard-horvath.jpg"
+          class="_img _parallax_img _img_parallax_y"
+        />
       </div>
-      <div class="_content row m-auto">
+      <div class="_content row m-auto _align_center_mob">
         <div data-aos="fade-up" data-aos-delay="450" class="col-lg-3 col-md-4">
           <h2>Expressions</h2>
         </div>
@@ -353,12 +369,12 @@
     <!-- ********************section-nine******************* -->
 
     <div class="_page _specs_2 m-auto scrollspy-section">
-      <div class="row">
+      <div class="row _change_direction_mob">
         <div class="col-lg-5 col-md-12 col-sm-12 _col">
           <div
             data-aos="fade-up"
             data-aos-delay="500"
-            class="_content container"
+            class="_content container _align_center_mob"
           >
             <h2>Sensory</h2>
             <p>
@@ -373,9 +389,12 @@
             >
           </div>
         </div>
-        <div class="col-lg-7 col-md-12 col-sm-12 _col m-auto">
+        <div class="col-lg-7 col-md-12 col-sm-12 _col m-auto _img_section_spy">
           <div class="_img_banner">
-            <img src="img/luke-peterson.jpg" class="_img _parallax_img" />
+            <img
+              src="img/luke-peterson.jpg"
+              class="_img _parallax_img _img_parallax_y"
+            />
           </div>
         </div>
       </div>
@@ -488,7 +507,11 @@
             <span>(guide price, tbc)</span>
           </div>
           <div data-aos="zoom-in" data-aos-delay="500" class="_buy">
-            <a href="#" data-bs-target="#exampleModal" data-bs-toggle="modal" class="_btn _btn_black btn btn-default rounded-pill"
+            <a
+              href="#"
+              data-bs-target="#exampleModal"
+              data-bs-toggle="modal"
+              class="_btn _btn_black btn btn-default rounded-pill"
               >GET UPDATES</a
             >
           </div>
@@ -502,14 +525,15 @@
           <h4>Reference tuning</h4>
         </div>
         <div data-aos="fade-up" class="_item">
-          <h4>Faceplate Design</h4>
           <div class="_desc">
             <div class="row">
               <div class="col-md-6 _desc">
+                <h4>Faceplate Design</h4>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Curabitur dignissim in felis ut elementum.
               </div>
               <div class="col-md-6 _desc">
+                <h4>Faceplate Design</h4>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Curabitur dignissim in felis ut elementum.
               </div>
@@ -517,26 +541,28 @@
           </div>
         </div>
         <div data-aos="fade-up" class="_item">
-          <h4>Finish</h4>
           <div class="row">
             <div class="col-md-6 _desc">
+              <h4>Finish</h4>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
               dignissim in felis ut elementum.
             </div>
             <div class="col-md-6 _desc">
+              <h4>Finish</h4>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
               dignissim in felis ut elementum.
             </div>
           </div>
         </div>
         <div data-aos="fade-up" class="_item">
-          <h4>Driver System</h4>
           <div class="row">
             <div class="col-md-6 _desc">
+              <h4>Driver System</h4>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
               dignissim in felis ut elementum.
             </div>
             <div class="col-md-6 _desc">
+              <h4>Driver System</h4>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
               dignissim in felis ut elementum.
             </div>
